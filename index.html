@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="tac.css">
+</head>
+<body>
+   
+  <div id="container">
+    <div id="name-input">
+      <label for="player1">Player 1 Name:</label>
+      <input type="text" id="player1" placeholder="Enter your name">
+      <br>
+      <label for="player2">Player 2 Name:</label>
+      <input type="text" id="player2" placeholder="Enter your name">
+      <br>
+      <button onclick="startGame()">Start Game</button>
+
+       <a href="page.html" id="computer-link"  class="theone">Back </a>
+    </div>
+
+    
+    <div id="game-container" style="display: none;">
+      <div id="board">
+        <div class="cell" id="cell0" onclick="handleClick(0)"></div>
+        <div class="cell" id="cell1" onclick="handleClick(1)"></div>
+        <div class="cell" id="cell2" onclick="handleClick(2)"></div>
+        <div class="cell" id="cell3" onclick="handleClick(3)"></div>
+        <div class="cell" id="cell4" onclick="handleClick(4)"></div>
+        <div class="cell" id="cell5" onclick="handleClick(5)"></div>
+        <div class="cell" id="cell6" onclick="handleClick(6)"></div>
+        <div class="cell" id="cell7" onclick="handleClick(7)"></div>
+        <div class="cell" id="cell8" onclick="handleClick(8)"></div>
+      </div>
+      <div id="status"></div>
+      <button id="restart-btn" onclick="reset()">Restart</button>
+      <button id="change-players-btn" onclick="changePlayers()">Change Players</button>
+      <a href="page.html" id="computer-link"  class="theone">Home</a>
+    </div>
+  </div>
+
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button onclick="reset()">Restart</button>
+    </div>
+  </div>
+
+  <script src="toe.js"></script>
+</body>
+</html>
+
+
+
+
+
